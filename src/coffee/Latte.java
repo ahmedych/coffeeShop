@@ -1,5 +1,7 @@
-public class Latte extends Coffee{
-    public Latte() {
+package coffee;
+
+class Latte extends Coffee{
+    Latte() {
         milk=new Milk();
         milk.setMilkPercentageInCup(80);
     }

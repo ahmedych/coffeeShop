@@ -1,5 +1,8 @@
-public class Americano extends Coffee{
-    public Americano() {
+package coffee;
+
+class Espresso extends Coffee{
+
+    Espresso() {
         milk=new Milk();
         milk.setMilkPercentageInCup(0);
     }

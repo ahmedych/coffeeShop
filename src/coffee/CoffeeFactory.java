@@ -1,6 +1,8 @@
-public class CoffeeFactory {
-    public Coffee getCoffee(CoffeeType type, int size, int ingredient) {
-        Coffee toReturn = null;
+package coffee;
+
+class CoffeeFactory {
+    Coffee getCoffee(CoffeeType type, int size, int ingredient) {
+        Coffee toReturn;
         switch (type) {
             case AMERICANO:
                 toReturn=new Americano();

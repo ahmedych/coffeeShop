@@ -1,5 +1,8 @@
+package coffee;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Objects;
 
 public class Cafe {
 
@@ -13,7 +16,7 @@ public class Cafe {
             for (CoffeeType coffeeType : CoffeeType.values()) {
                 System.out.println(coffeeType.ordinal() + "-" + coffeeType);
             }
-            String console = "";
+            String console;
             while (choosenType > 5 || choosenType < 0) {
                 console = reader.readLine();
                 choosenType=consoleFilter(console);
@@ -40,7 +43,7 @@ public class Cafe {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(factory.getCoffee(CoffeeType.byOrdinal(choosenType),choosenSize,choosenIngredient));
+        System.out.println(factory.getCoffee(Objects.requireNonNull(CoffeeType.byOrdinal(choosenType)),choosenSize,choosenIngredient));
 
     }
     private static int consoleFilter(String console){

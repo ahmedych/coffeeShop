@@ -1,3 +1,5 @@
+package coffee;
+
 public enum CoffeeType {
     AMERICANO,
     CAPPUCCINO,
