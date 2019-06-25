@@ -4,4 +4,8 @@ public class Milk {
     public void setMilkPercentageInCup(int milkPercentageInCup) {
         this.milkPercentageInCup = milkPercentageInCup;
     }
+
+    public int getMilkPercentageInCup() {
+        return milkPercentageInCup;
+    }
 }

@@ -9,6 +9,7 @@ public abstract class Coffee {
     public String toString() {
         return cupSize + " cup of "
                 + this.getClass().getName()
-                + " with " + ingredient;
+                + " with " + ingredient
+                +milk.getMilkPercentageInCup();
     }
 }
