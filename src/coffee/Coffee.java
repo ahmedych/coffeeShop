@@ -8,7 +8,7 @@ public abstract class Coffee {
     @Override
     public String toString() {
         return cupSize + " cup of "
-                + this.getClass().getName()
+                + this.getClass().getSimpleName()
                 + " with " + ingredient;
     }
 }
